@@ -1,0 +1,5 @@
+[host-member]
+home-member-1 ansible_user=root host_preparation_host_name=host-member-1 ansible_host=127.0.0.1 ansible_port=22
+
+[member-group:children]
+host-member
