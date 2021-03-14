@@ -53,3 +53,6 @@ host_preparation_rc_vars:
   - { regexp: '^echo never > /sys/kernel/mm/transparent_hugepage/enabled', line: 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' }
   - { regexp: '^echo never > /sys/kernel/mm/transparent_hugepage/defrag', line: 'echo never > /sys/kernel/mm/transparent_hugepage/defrag' }
   - { regexp: '^ip link set eth0 txqueuelen ', line: 'ip link set eth0 txqueuelen 5000' }
+host_preparation_lc_ctype:
+  - { line: 'LANG=en_US.utf-8' }
+  - { line: 'LC_ALL=en_US.utf-8' }

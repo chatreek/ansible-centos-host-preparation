@@ -1,0 +1,10 @@
+---
+  - name: Fix issue LC_CTYPE
+    lineinfile:
+      dest: /etc/environment
+      line: "{{ item.line }}"
+    with_items: "{{ host_preparation_lc_ctype }}"
+    when: host_preparation_is_tuning
+    register: host_preparation_configure_fix_lc_ctype
+
+

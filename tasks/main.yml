@@ -7,4 +7,5 @@
 - include: ntp.yml
 - include: hostname.yml
 - include: tuning.yml
+- include: lc_ctype.yml
 - include: reboot.yml
